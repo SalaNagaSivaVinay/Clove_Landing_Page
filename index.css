@@ -1,0 +1,860 @@
+body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fffaf6;
+    }
+    .logo {
+      font-size: 2.2rem;
+      color: #e87c27;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .logo span {
+      color: #6d4c1b;
+      font-size: 1rem;
+      font-weight: 400;
+      margin-left: 4px;
+      letter-spacing: 0;
+    }
+    .btn-orange {
+      background: #ff8c2a;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      font-weight: 600;
+    }
+     .btn-orange31 {
+    background-color: #FF7A1A;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 16px;
+    width: 300px;
+    height:38px;
+          border: none;
+
+    white-space: nowrap;
+  }
+    .btn-orange:hover {
+      background: #e87c27;
+      color: #fff;
+    }
+    .phone {
+      background: #fff;
+      border: 2px solid #000000;
+      border-radius: 24px;
+      color: #222;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0.5rem 1rem;
+    }
+    .doctor-img {
+      background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?fit=crop&w=400&q=80') center center/cover no-repeat;
+      border-radius: 12px;
+      box-shadow: 0 6px 32px rgba(0,0,0,0.12);
+      width: 330px;
+      height: 420px;
+      position: relative;
+    }
+    .left-overlay {
+      position: absolute;
+      left: 30px;
+      top: 60px;
+      background: rgba(255,255,255,0.94);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      max-width: 340px;
+    }
+    .human-overlay-img {
+  position: inherit;
+  right: -190px; /* adjust based on image size and overlap */
+  height: 900px; /* adjust as needed */
+  z-index: 2;
+    transform: scaleX(-1); /* 👈 Flips the image horizontally */
+
+  margin: -624px 0px 0px 0px;
+}
+    .left-overlay h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #222;
+      margin-bottom: 0.5rem;
+    }
+    .left-overlay p {
+      color: #444;
+      margin-bottom: 1.1rem;
+    }
+    .stats-bar {
+      background: #fff;
+      border-top: 1px solid #f1e9e1;
+      font-weight: 500;
+      color: #222;
+    }
+    .stats-icon {
+      font-size: 2.1rem;
+      color: #ff8c2a;
+      margin-bottom: 0.2rem;
+    }
+    .stats-number {
+      font-size: 1.15rem;
+      font-weight: bold;
+      color: #222;
+    }
+    .stats-label {
+      font-size: 1rem;
+      color: #7d6c5f;
+    }
+    .captcha-box {
+      background: #3b2314;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      min-width: 70px;
+      text-align: center;
+    }
+        .treatment-card {
+      border: 1px solid #ffe2c8;
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0;
+    }
+    .treatment-card:hover {
+      box-shadow: 0 4px 24px rgba(255,140,42,0.10);
+    }
+    .treatment-img {
+      background: #fbeee4;
+      width: 180px;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 0 20px 20px 0;
+      margin: 0 0 0 0;
+      display: block;
+    }
+    .treatment-content {
+      padding: 2rem 1.5rem;
+      flex: 1 1 auto;
+    }
+    .btn-orange {
+      background: #ff8c2a;
+      color: #fff;
+      border-radius: 24px;
+      font-weight: 600;
+      border: none;
+      transition: background 0.2s;
+    }
+    .btn-orange:hover {
+      background: #e87c27;
+      color: #fff;
+    }
+    .price-label {
+      color: #ff8c2a;
+      font-size: 0.97rem;
+      font-weight: 500;
+    }
+    @media (max-width: 991.98px) {
+      .treatment-card {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+      }
+      .treatment-img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        margin: 0 auto;
+      }
+      .treatment-content {
+        padding: 1.5rem 1rem;
+      }
+    }
+    .review-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    padding: 1rem;
+    width: 250px;
+  }
+
+  .google-review-section {
+    background: #fff6f0;
+    padding: 3rem 0;
+  }
+
+  .clinic-grid .btn-outline-secondary {
+    width: 100%;
+    text-align: left;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .clinic-grid .btn-outline-secondary svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+
+  .img-rounded {
+    border-radius: 1rem;
+  }
+    .consult-box, .offer-box {
+    border: 1px solid #f0e6de;
+    border-radius: 1rem;
+    background-color: #fff;
+    height: 100%;
+  }
+
+  .faq-section .accordion-button {
+    background-color: transparent;
+    font-weight: 500;
+    border: none;
+    padding-left: 0;
+  }
+
+  .faq-section .accordion-button::after {
+    margin-left: auto;
+    content: "+";
+    font-size: 1.25rem;
+    background-image: none !important;
+  }
+
+  .faq-section .accordion-button.collapsed::after {
+    transform: rotate(0);
+  }
+
+  .faq-section .accordion-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .btn-orange {
+    background-color: #ff7a00;
+    color: white;
+    border-radius: 1.5rem;
+    padding: 0.6rem 1.5rem;
+  }
+    .consult-offer-wrapper {
+    border: 1px solid #f1e5d9;
+    border-radius: 1rem;
+    padding: 2rem;
+    background-color: #FFF9F4;
+    height: 100%;
+  }
+
+  .form-control {
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .btn-orange {
+    background-color: #ff7a00;
+    color: white;
+    border-radius: 2rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+  }
+
+  .btn-orange:hover {
+    background-color: #e86900;
+  }
+
+  .highlight-offer {
+    background: url('bg-pattern.png') no-repeat center center;
+    background-size: cover;
+    flex: 1;
+  }
+
+  .offer-detail {
+    padding: 1.5rem;
+    border-left: 1px solid #eee;
+    flex: 1;
+  }
+
+  .offer-box {
+    display: flex;
+    border: 1px solid #f1e5d9;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .font-change{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  .font-change2{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+.font-change5{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+.container22{
+    max-width: 1250px;
+    margin-left: 24px;
+}
+  .offer-box img {
+    max-width: 100%;
+  }
+  .phone-icon {
+  width: 12px;
+  height: 21px;
+}
+  .navbar-header {
+    background-color: #fff8f3;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #f0e0d5;
+  }
+
+  .btn-orange {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 2rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-orange:hover {
+    background-color: #e26900;
+  }
+
+  .phone-box {
+    border: 1px solid #4d2c1c;
+    border-radius: 2rem;
+    padding: 0.4rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    color: #4d2c1c;
+    background-color: #fff;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .logo img {
+    max-height: 50px;
+  }
+    .doctor-img {
+    background: url('Images/doctor first half image.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    position: relative;
+  }
+
+  .left-overlay {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.75);
+    padding: 2rem;
+    border-radius: 1rem;
+    max-width: 400px;
+  }
+
+  .left-overlay h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .btn-orange {
+    background-color: #f57c00;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+  }
+
+  .btn-orange:hover {
+    background-color: #e46c00;
+  }
+
+  .captcha-wrapper {
+    display: flex;
+    border: 1px solid #fcd9b1;
+    border-radius: 999px;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .captcha-wrapper input {
+    border: none;
+    flex: 1;
+    padding: 0.6rem 1rem;
+    outline: none;
+    font-size: 14px;
+    border-radius: 0;
+  }
+
+.blurred-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(2px);
+}
+
+.frosted-card {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  padding: 1.5rem 1rem;
+  width: 644px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+  .br-orange{
+    border: 1px solid #fcd9b1;
+  }
+  .metrics-bar {
+  background-color: #fff7f0;
+  padding: 12px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none;  /* IE & Edge */
+  scrollbar-width: none; 
+      /* Firefox */
+}
+
+.metrics-bar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.metrics-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+  padding: 0 20px;
+}
+
+  .metric-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: max-content;
+  }
+
+  .metric-item img {
+    height: 40px;
+    width: auto;
+  }
+
+  .metric-text {
+    font-weight: 500;
+    color: #3b220c;
+    font-size: 16px;
+  }
+
+  .metric-text span {
+    color: #f58220;
+    font-weight: 700;
+  }
+.btn-orange {
+  background-color: #ff7e1f;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.btn-orange:hover {
+  background-color: #e86f14;
+}
+
+.object-fit-cover {
+  object-fit: cover;
+}
+
+.treatment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button::after {
+  display: none; /* Hide Bootstrap arrow */
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff7e1f;
+}
+
+/* JS will toggle this class */
+.accordion-button[aria-expanded="true"] .accordion-icon {
+  content: '–';
+}
+.accordion{
+    border-color:#ffffff !important;
+}
+.overflow-auto::-webkit-scrollbar {
+  height: 6px;
+}
+.overflow-auto::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+.scroll-hidden::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-hidden {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow-x: auto;
+  }
+
+  .figtree-text {
+    font-family: 'Figtree';
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  .patient-card {
+    width: 244px;
+    height: 450px;
+  }
+
+  .patient-img {
+    width: 224px;
+    height: 350px;
+    object-fit: cover;
+  }
+
+  .card-footer-text {
+    width: 224px;
+    height: 40px;
+  }
+  .bg-light-orange {
+    background-color:#ffffff; /* Light orange */
+    padding: 16px 12px;
+  }
+
+  /* White card */
+  .form-wrapper {
+    background-color: #FFF4EC  ; /* White box inside */
+    border-radius: 12px;
+    padding: 32px 24px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.04); /* subtle shadow for better contrast */
+    margin-bottom:20px;
+
+  }
+
+  /* Input styling */
+  .form-control.custom-input {
+    border: 1px solid #FFE0C4;
+    border-radius: 25px;
+    height: 48px;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+
+  .captcha-input {
+    position: relative;
+  }
+
+  .captcha-code {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+    margin-right: 4px;
+    margin-bottom:19px;
+    background-color: #4B2E1E;
+    color: white;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 16px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-orange3 {
+    background-color: #FF7A1A;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 16px;
+    width: 300px;
+    height:38px;
+    white-space: nowrap;
+  }
+  .form-check-input{
+    border-color: #FFE0C4
+    ;
+  }
+    .btn-orange {
+    background-color: #FF7A1A;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 16px;
+    width: 164px;
+    height:38px;
+  }
+      .btn-orange4 {
+    background-color: #FF7A1A;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+  }
+   .btn-orange2 {
+    background-color: #FF7A1A;
+    color: white;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 8px 40px;
+    font-size: 16px;
+    width: 224px;
+    height:30px;
+  }
+  .text-clr {
+    color:#F58420;
+  }
+  .form-check-label {
+    font-size: 14px;
+  }
+
+  .cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.image-card {
+  position: relative;
+  width: 412.67px;
+  height: 345px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.info-box.aips {
+  background-color: #462512; /* Example: Light blue */
+  border: 2px solid #462512; /* Optional: Blue border */
+  color: #ffffff;            /* Optional: Dark text */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+
+.info-box {
+  position: absolute;
+  bottom: 0;
+  height: 205px;
+  background-color: #0a1a2f; /* dark blue background */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 20px 20px 20px;
+}
+
+.info-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.info-box h3 span {
+  font-weight: bold;
+}
+
+.line {
+  width: 123px;
+    margin-left: 20px;
+  border-bottom: 10px solid orange;
+  border-radius:20px;
+}
+.line2 {
+  width: 138px;
+  border-bottom: 10px solid orange;
+  margin: 10px 0;
+  border-radius:20px;
+}
+.line3 {
+  width: 97px;
+  border-bottom: 10px solid orange;
+  margin: 10px 0;
+  border-radius:20px;
+  margin-left:40px;
+}
+.aips-font{
+    font-size: 30px;
+    margin-left: 5px;
+}
+.text-clr{
+    color:#F58420;
+}
+.info-box p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.learn-more {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  color: orange;
+  cursor: pointer;
+}
+
+.learn-more img {
+  width: 26px;
+  height: 26px;
+}
+
+.arrow {
+  font-size: 16px;
+}
+
+.clinic-btn {
+  width: 196px;
+  height: 86px;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+.clinic-icon {
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+.faq-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.faq-item:hover {
+  background-color: #f9f9f9;
+}
+a{
+    color:#000000;
+}
+.faq-toggle {
+  font-size: 20px;
+  color: #ea7b28;
+  font-weight: bold;
+}
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #f7931e;
+}
+.font-design {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+}
+.font-design2{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+.bor-colour{
+    border:1px solid #fcd9b1;
+}
+.font-design4{
+    font-family: 'Figtree', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.font-design6 {
+  font-family: 'Figtree', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.padding-space{
+    margin-bottom: 18px;
+}
+.height-image{
+    height:220px;
+    width:310px;
+}
+
+.metrics-container {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+}
+
+.scroll-content {
+  display: flex;
+  animation: scrollLeft 30s linear infinite;
+}
+
+.metric-item {
+  flex: 0 0 auto;
+  display: ruby;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+}
+
+.metric-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+/* Animation keyframes */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
