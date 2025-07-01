@@ -5,12 +5,19 @@ This is a responsive landing page for **Clove Dental**, featuring real patient t
 ## 📁 Project Structure
 
 project-folder/
+
 │
+
 ├── index.html # Main HTML structure
+
 ├── index.js # JavaScript logic for interactivity
+
 ├── index.css # All styling for the page
+
 ├── Images/ # All images used in the project (patients, clinic images, etc.)
+
 ├── icons/ # City icons for the "Find Us Across India" section
+
 └── README.md # Project documentation
 
 
